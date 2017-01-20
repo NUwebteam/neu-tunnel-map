@@ -1,0 +1,20 @@
+{
+  "name": "Northeastern news build template",
+  "description": "A web tooling template for Northeastern University News",
+  "main": "index.js",
+  "authors": [
+    "Brian Berzellini"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/NUwebteam/gulp-build-template",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "upbase": "git@github.com:Upstatement/ups-mixin-lib"
+  }
+}

@@ -1,0 +1,176 @@
+body {
+  color: $black;
+  background-color: $white;
+}
+
+#tunnel-map {
+  width: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
+  height: auto;
+  box-sizing: border-box;
+  height: auto;
+  overflow: auto;
+}
+
+.map-container {
+  width: 100%;
+  position: relative;
+  z-index: 100;
+  min-height: 100vh;
+  min-width: 100vw;
+  height: auto;
+  height: auto;
+  overflow: scroll;
+  transition: all .5s ease;
+}
+
+.map-container > img {
+    width: 100%;
+    height: auto;
+    transition: all .5s ease;
+}
+
+.direction-prompt-container {
+  position: fixed;
+  z-index: 1000;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 75px;
+  background-color: rgba(0, 0, 0, .75);
+  width: 75px;
+  height: 75px;
+  border: 1px solid $black;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.direction-prompt {
+  background: rgba(0, 0, 0, .8);
+  z-index: 1000;
+  width: 75%;
+  height: 75%;
+  margin: 12.5%;
+  transition: all .5s ease;
+  background: url("./assets/img/nav.png") no-repeat center center;
+  background-size: contain;
+  background-position: 50% 50%;
+}
+
+.direction-prompt-container:hover {
+  transform: scale(1.25);
+  transition: all .25s ease;
+}
+
+.direction-container {
+  font-family: 'Anton', sans-serif !important;
+  font-weight: 400;
+  width: 100%;
+  z-index: 1001;
+  height: 100vh;
+  background-color: $white;
+  color: $black;
+  position: fixed;
+  bottom: -101%;
+  left: 0;
+  transform: translateY(0%);
+  transition: all .25s ease;
+}
+
+.close-direction {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  font-size: 105px;
+  transform: rotate(45deg);
+  color: $black;
+}
+
+.slide-container {
+  transform: translateY(-101%);
+  transition: all .5s ease;
+}
+
+.direction-form-wrapper {
+  width: 75%;
+  margin: 300px 0% 0% 12.5%;
+  text-align: center;
+}
+
+select {
+  display: block;
+  text-align: center;
+  font-family: 'Anton', sans-serif !important;
+  font-weight: 400;
+  font-size: 2em;
+  width: 60%;
+  margin: 20px 0px 20px 20%;
+  text-transform: uppercase;
+}
+
+button.success {
+  padding: 10px 40px;
+  text-align: center;
+  margin: 10px 20px;
+  background-color: $green;
+  color: $white;
+  font-family: 'Anton', sans-serif !important;
+  font-weight: 400;
+  font-size: 2.5em;
+  cursor: pointer;
+  transition: all .25s ease;
+}
+
+button.success:hover {
+  background-color: $dark-green;
+  color: $white;
+  transition: all .25s ease;
+}
+
+.route-container {
+  position: absolute;
+  background-color: rgba(255,255,255,.75);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  overflow: scroll;
+  transition: all .5s ease;
+  z-index: -1;
+  opacity: 0;
+  font-family: 'Anton', sans-serif !important;
+  font-weight: 400;
+  min-width: 100vh;
+}
+
+.route-container > img {
+  min-width: 100vw;
+  width:  100%;
+  min-height: 100vw;
+  height: 100%;
+  transition: all .5s ease;
+}
+
+.close-route {
+  position: fixed;
+  cursor: pointer;
+  top: 20px;
+  left: 30px;
+  font-size: 105px;
+  transform: rotate(45deg);
+  color: $black;
+  opacity: 0;
+  z-index: -1;
+  transition: all 1.5s ease;
+  font-family: 'Anton', sans-serif !important;
+  font-weight: 400;
+}
+
+.show-route {
+  z-index: 10000;
+  opacity: 1;
+  transition: all 1.5s ease;
+}

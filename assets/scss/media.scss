@@ -1,0 +1,48 @@
+@media screen and (max-width: 1200px) {
+  .map-container {
+    // transform: scale(1);
+    transition: all .5s ease;
+    // width:  auto;
+    // height: 100vh;
+    overflow: scroll;
+  }
+
+  .map-container > img {
+    min-width: 100vw;
+    width:  auto;
+    min-height: 100vw;
+    height: 100vh;
+    overflow: scroll;
+    transition: all .5s ease;
+  }
+  .direction-form-wrapper {
+    margin: 200px 0% 0% 12.5%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #tunnel-map {
+   font-size: 8px;
+  }
+  .map-container {
+    transform: scale(1);
+    height: 100vh;
+    overflow: scroll;
+    transition: all .5s ease;
+  }
+
+  .map-container > img {
+    transform: scale(1);
+    min-width: 100vw;
+    width:  auto;
+    min-height: 100vw;
+    height: 100vh;
+    overflow: scroll;
+    transition: all .5s ease;
+  }
+
+  .direction-form-wrapper {
+    margin: 100px 0% 0% 12.5%;
+  }
+
+}
