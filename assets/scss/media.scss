@@ -2,8 +2,7 @@
   #tunnel-map {
     font-size: 12px;
   }
-  .map-container,
-  .route-container {
+  .map-container {
     // transform: scale(1);
     transition: all .5s ease;
     // width:  auto;
@@ -11,8 +10,7 @@
     overflow: scroll;
   }
 
-  .map-container > img,
-  .route-container > img {
+  .map-container > img {
     min-width: 100vw;
     width:  auto;
     min-height: 100vw;
@@ -49,7 +47,7 @@
   .route-container {
     transform: scale(1);
     height: 100vh;
-    overflow: scroll;
+    // overflow: scroll;
     transition: all .5s ease;
   }
 
@@ -59,7 +57,7 @@
     width:  auto;
     min-height: 100vw;
     height: 100vh;
-    overflow: scroll;
+    // overflow: scroll;
     transition: all .5s ease;
   }
 
@@ -68,8 +66,10 @@
   }
 
   .direction-prompt-container {
-    bottom: 5px;
-    right: 5px;
+    width: 75px;
+    height: 75px;
+    bottom: 10px;
+    right: 10px;
   }
 
 
