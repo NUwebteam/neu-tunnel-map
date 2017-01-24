@@ -9,9 +9,9 @@
     <body>
       <div id="tunnel-map">
         <div class="map-container">
-          <img src="./assets/img/tunnel-map.svg" alt="tunnel map">
+          <img src="./assets/img/base-default-icons.svg" alt="tunnel map">
           <div id="route-container" class="route-container">
-            <img id="route-image" src="./assets/img/sn_cb.png" alt="tunnel map">
+            <img id="route-image" src="#" alt="tunnel map">
           </div>
         </div>
         <div id="close-route" class="close-route">
@@ -27,7 +27,7 @@
           </div>
           <div class="direction-form-wrapper">
             <h1> Start Location </h1>
-            <select name="start-location">
+            <select tabindex="0" name="start-location">
               <option value=""></option>
               <option value="cabot">Cabot Gym</option>
               <option value="richards">Richards Hall</option>
@@ -42,7 +42,7 @@
               <option value="snell">Snell Engineering</option>
             </select>
             <h1> End Location </h1>
-            <select name="end-location">
+            <select tabindex="0" name="end-location">
               <option value=""></option>
               <option value="cabot">Cabot Gym</option>
               <option value="richards">Richards Hall</option>
@@ -56,7 +56,10 @@
               <option value="snell-lib">Snell Library</option>
               <option value="snell">Snell Engineering</option>
             </select>
-              <button id="map-go"class="success"> GO </button>
+            <button id="map-go"class="success"> GO </button>
+            <div class="error-container hide">
+              <h5>Something went wrong. Please be sure to have a start and end location, then try again.</h5>
+            </div>
           </div>
         </div>
         <!-- <div id="route-container" class="route-container">

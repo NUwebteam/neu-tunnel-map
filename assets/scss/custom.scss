@@ -11,9 +11,10 @@ body {
   box-sizing: border-box;
   height: auto;
   overflow: auto;
+  font-size: 14px;
 }
 
-.map-container {
+.map-container{
   width: 100%;
   position: relative;
   z-index: 100;
@@ -107,6 +108,7 @@ select {
   width: 60%;
   margin: 20px 0px 20px 20%;
   text-transform: uppercase;
+  border: 1px solid $black;
 }
 
 button.success {
@@ -173,4 +175,17 @@ button.success:hover {
   z-index: 10000;
   opacity: 1;
   transition: all 1.5s ease;
+}
+
+.error-container {
+  width: 80%;
+  margin-left: 10%;
+  color: red;
+  font-weight: bold;
+  padding: 10px 0px;
+  line-height: 2.25em;
+}
+
+.hide {
+  display: none;
 }

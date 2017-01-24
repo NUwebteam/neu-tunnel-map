@@ -1,5 +1,9 @@
 @media screen and (max-width: 1200px) {
-  .map-container {
+  #tunnel-map {
+    font-size: 12px;
+  }
+  .map-container,
+  .route-container {
     // transform: scale(1);
     transition: all .5s ease;
     // width:  auto;
@@ -7,7 +11,8 @@
     overflow: scroll;
   }
 
-  .map-container > img {
+  .map-container > img,
+  .route-container > img {
     min-width: 100vw;
     width:  auto;
     min-height: 100vw;
@@ -31,7 +36,24 @@
     transition: all .5s ease;
   }
 
-  .map-container > img {
+  .map-container > img{
+    transform: scale(1);
+    min-width: 100vw;
+    width:  auto;
+    min-height: 100vw;
+    height: 100vh;
+    overflow: scroll;
+    transition: all .5s ease;
+  }
+
+  .route-container {
+    transform: scale(1);
+    height: 100vh;
+    overflow: scroll;
+    transition: all .5s ease;
+  }
+
+  .route-container > img {
     transform: scale(1);
     min-width: 100vw;
     width:  auto;
@@ -45,4 +67,37 @@
     margin: 100px 0% 0% 12.5%;
   }
 
+  .direction-prompt-container {
+    bottom: 5px;
+    right: 5px;
+  }
+
+
+  .close-direction,
+  .close-route {
+    top: -20px;
+  }
+
+  .error-container {
+    text-align: left;
+  }
+
+}
+
+@media screen and (max-height: 450px) {
+  #tunnel-map {
+   font-size: 8px;
+  }
+
+  .route-container {
+    height: 100vw;
+  }
+
+  .route-container > img {
+    height: 100vw;
+
+  }
+  .direction-form-wrapper {
+    margin: 20px 0 0 12.5%;
+  }
 }
