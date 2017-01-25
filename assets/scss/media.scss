@@ -18,12 +18,13 @@
     overflow: scroll;
     transition: all .5s ease;
   }
-  .direction-form-wrapper {
-    margin: 200px 0% 0% 12.5%;
+
+  .direction-prompt-container {
+    top: 45px;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
   #tunnel-map {
    font-size: 8px;
   }
@@ -62,14 +63,40 @@
   }
 
   .direction-form-wrapper {
-    margin: 100px 0% 0% 12.5%;
+    // margin: 100px 0% 0% 12.5%;
+    max-width: 100%;
+    width: 100%;
+    text-align: left;
+    padding: 5px;
+  }
+
+  .direction-prompt {
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  #tunnel-map .direction-form-wrapper > h4 {
+      font-size: 3em;
+      transition: all .5s ease;
   }
 
   .direction-prompt-container {
-    width: 75px;
-    height: 75px;
-    bottom: 10px;
-    right: 10px;
+    width: 60px;
+    height: 60px;
+    top: 30px;
+    right: 30px;
+  }
+
+  #tunnel-map .direction-prompt > h2 {
+    transition: all .5s ease;
+  }
+
+  select {
+    font-size: 2em;
+    margin: 5px 0px;
   }
 
 
@@ -89,6 +116,10 @@
    font-size: 8px;
   }
 
+#tunnel-map .direction-form-wrapper > h4 {
+    display: none;
+  }
+
   .route-container {
     height: 100vw;
   }
@@ -98,6 +129,11 @@
 
   }
   .direction-form-wrapper {
-    margin: 20px 0 0 12.5%;
+    margin: 0;
+    padding: 5px 0px 0px 5px;
+  }
+
+.direction-prompt-container {
+  top: 5px;
   }
 }

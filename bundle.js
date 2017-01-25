@@ -154,28 +154,30 @@
 	        $('#route-image').attr('src', './assets/img/el/el_sl.png');
 	    } else if (startLocation === 'ell' && endLocation === 'snell') {
 	        $('#route-image').attr('src', './assets/img/el/el_sn.png');
+	    } else if (startLocation === 'churchill' && endLocation === 'cabot') {
+	        $('#route-image').attr('src', './assets/img/ch/ch_cb.png');
+	    } else if (startLocation === 'churchill' && endLocation === 'curry') {
+	        $('#route-image').attr('src', './assets/img/ch/ch_csc.png');
+	    } else if (startLocation === 'churchill' && endLocation === 'dodge') {
+	        $('#route-image').attr('src', './assets/img/ch/ch_dg.png');
+	    } else if (startLocation === 'churchill' && endLocation === 'ell') {
+	        $('#route-image').attr('src', './assets/img/ch/ch_el.png');
+	    } else if (startLocation === 'churchill' && endLocation === 'forsyth') {
+	        $('#route-image').attr('src', './assets/img/ch/ch_fr.png');
+	    } else if (startLocation === 'churchill' && endLocation === 'hayden') {
+	        $('#route-image').attr('src', './assets/img/ch/ch_ha.png');
+	    } else if (startLocation === 'churchill' && endLocation === 'mugar') {
+	        $('#route-image').attr('src', './assets/img/ch/ch_mu.png');
+	    } else if (startLocation === 'churchill' && endLocation === 'richards') {
+	        $('#route-image').attr('src', './assets/img/ch/ch_ri.png');
+	    } else if (startLocation === 'churchill' && endLocation === 'snell-lib') {
+	        $('#route-image').attr('src', './assets/img/ch/ch_sl.png');
+	    } else if (startLocation === 'churchill' && endLocation === 'snell') {
+	        $('#route-image').attr('src', './assets/img/ch/ch_sn.png');
 	    }
 	};
 
 	$('#direction-prompt').on('click', function () {
-	    $('.direction-container').removeClass('hide');
-	    setTimeout(function () {
-	        $('.direction-container').addClass('slide-container');
-	        $('.direction-container').addClass('slide-container');
-	        $('.route-container').removeClass('show-route');
-	        $('#close-route').removeClass('show-route');
-	    }, 250);
-	});
-
-	$('#close-direction').on('click', function () {
-	    $('.direction-container').removeClass('slide-container');
-	    setTimeout(function () {
-	        $('.direction-container').addClass('hide');
-	    }, 250);
-	    // $('.direction-container').delay(500).removeClass('hide');
-	});
-
-	$('#map-go').on('click', function () {
 	    var start = $('select[name="start-location"]').val();
 	    var end = $('select[name="end-location"]').val();
 	    getMapRoute(start, end);
@@ -183,23 +185,52 @@
 	        $('.error-container').removeClass('hide');
 	    } else {
 	        $('.error-container').addClass('hide');
-	        $('.direction-container').removeClass('slide-container');
 	        $('.route-container').addClass('show-route');
 	        $('#close-route').addClass('show-route');
-	        setTimeout(function () {
-	            $('.direction-container').addClass('hide');
-	        }, 250);
+	        $('.direction-prompt-container').removeClass('show-direction');
+	        $('.direction-form-wrapper').removeClass('show-direction');
 	    }
 	});
+
+	// $('#close-direction').on('click', function() {
+	//     $('.direction-container').removeClass('slide-container');
+	//     setTimeout(function() {
+	//         $('.direction-container').addClass('hide');
+	//     }, 250);
+	//     // $('.direction-container').delay(500).removeClass('hide');
+	// });
+
+	// $('#map-go').on('click', function() {
+	//     let start = $('select[name="start-location"]').val();
+	//     let end = $('select[name="end-location"]').val();
+	//     getMapRoute(start,end);
+	//     if (start === end || start === '' && end === '' || end === '' || start === '') {
+	//         $('.error-container').removeClass('hide');
+	//     } else {
+	//         $('.error-container').addClass('hide');
+	//         $('.direction-container').removeClass('slide-container');
+	//         $('.route-container').addClass('show-route');
+	//         $('#close-route').addClass('show-route');
+	//         setTimeout(function() {
+	//             $('.direction-container').addClass('hide');
+	//         }, 250);
+	//     }
+	// });
 
 	$('#close-route').on('click', function () {
 	    $('.route-container').removeClass('show-route');
 	    $('#close-route').removeClass('show-route');
+	    $('.direction-prompt-container').addClass('show-direction');
+	    $('.direction-form-wrapper').addClass('show-direction');
 	});
 
-	setTimeout(function () {
-	    $('.direction-prompt-container').removeClass('pulse');
-	}, 7500);
+	setInterval(function () {
+	    var start = $('select[name="start-location"]').val();
+	    var end = $('select[name="end-location"]').val();
+	    if (start !== '' && end !== '' && start !== end) {
+	        $('.direction-prompt-container').addClass('pulse');
+	    }
+	}, 750);
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
