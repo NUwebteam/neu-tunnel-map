@@ -128,6 +128,26 @@ let getMapRoute = (startLocation, endLocation) => {
         $('#route-image').attr('src', './assets/img/ch/ch_sl.png');
     } else if (startLocation === 'churchill' && endLocation === 'snell') {
         $('#route-image').attr('src', './assets/img/ch/ch_sn.png');
+    } else if (startLocation === 'curry' && endLocation === 'cabot') {
+        $('#route-image').attr('src', './assets/img/csc/csc_cb.png');
+    } else if (startLocation === 'curry' && endLocation === 'churchill') {
+        $('#route-image').attr('src', './assets/img/csc/csc_ch.png');
+    } else if (startLocation === 'curry' && endLocation === 'dodge') {
+        $('#route-image').attr('src', './assets/img/csc/csc_dg.png');
+    } else if (startLocation === 'curry' && endLocation === 'ell') {
+        $('#route-image').attr('src', './assets/img/csc/csc_el.png');
+    } else if (startLocation === 'curry' && endLocation === 'forsyth') {
+        $('#route-image').attr('src', './assets/img/csc/csc_fr.png');
+    } else if (startLocation === 'curry' && endLocation === 'hayden') {
+        $('#route-image').attr('src', './assets/img/csc/csc_ha.png');
+    } else if (startLocation === 'curry' && endLocation === 'mugar') {
+        $('#route-image').attr('src', './assets/img/csc/csc_mu.png');
+    } else if (startLocation === 'curry' && endLocation === 'richards') {
+        $('#route-image').attr('src', './assets/img/csc/csc_ri.png');
+    } else if (startLocation === 'curry' && endLocation === 'snell-lib') {
+        $('#route-image').attr('src', './assets/img/csc/csc_sl.png');
+    } else if (startLocation === 'curry' && endLocation === 'snell') {
+        $('#route-image').attr('src', './assets/img/csc/csc_sn.png');
     }
 };
 
