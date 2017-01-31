@@ -194,6 +194,86 @@
 	        $('#route-image').attr('src', './assets/img/csc/csc_sl.png');
 	    } else if (startLocation === 'curry' && endLocation === 'snell') {
 	        $('#route-image').attr('src', './assets/img/csc/csc_sn.png');
+	    } else if (startLocation === 'cabot' && endLocation === 'churchill') {
+	        $('#route-image').attr('src', './assets/img/cb/cb_ch.png');
+	    } else if (startLocation === 'cabot' && endLocation === 'curry') {
+	        $('#route-image').attr('src', './assets/img/cb/cb_csc.png');
+	    } else if (startLocation === 'cabot' && endLocation === 'dodge') {
+	        $('#route-image').attr('src', './assets/img/cb/cb_dg.png');
+	    } else if (startLocation === 'cabot' && endLocation === 'ell') {
+	        $('#route-image').attr('src', './assets/img/cb/cb_el.png');
+	    } else if (startLocation === 'cabot' && endLocation === 'forsyth') {
+	        $('#route-image').attr('src', './assets/img/cb/cb_fr.png');
+	    } else if (startLocation === 'cabot' && endLocation === 'hayden') {
+	        $('#route-image').attr('src', './assets/img/cb/cb_ha.png');
+	    } else if (startLocation === 'cabot' && endLocation === 'mugar') {
+	        $('#route-image').attr('src', './assets/img/cb/cb_mu.png');
+	    } else if (startLocation === 'cabot' && endLocation === 'richards') {
+	        $('#route-image').attr('src', './assets/img/cb/cb_ri.png');
+	    } else if (startLocation === 'cabot' && endLocation === 'snell-lib') {
+	        $('#route-image').attr('src', './assets/img/cb/cb_sl.png');
+	    } else if (startLocation === 'cabot' && endLocation === 'snell') {
+	        $('#route-image').attr('src', './assets/img/cb/cb_sn.png');
+	    } else if (startLocation === 'hayden' && endLocation === 'cabot') {
+	        $('#route-image').attr('src', './assets/img/ha/ha_cb.png');
+	    } else if (startLocation === 'hayden' && endLocation === 'churchill') {
+	        $('#route-image').attr('src', './assets/img/ha/ha_ch.png');
+	    } else if (startLocation === 'hayden' && endLocation === 'curry') {
+	        $('#route-image').attr('src', './assets/img/ha/ha_csc.png');
+	    } else if (startLocation === 'hayden' && endLocation === 'dodge') {
+	        $('#route-image').attr('src', './assets/img/ha/ha_dg.png');
+	    } else if (startLocation === 'hayden' && endLocation === 'ell') {
+	        $('#route-image').attr('src', './assets/img/ha/ha_el.png');
+	    } else if (startLocation === 'hayden' && endLocation === 'forsyth') {
+	        $('#route-image').attr('src', './assets/img/ha/ha_fr.png');
+	    } else if (startLocation === 'hayden' && endLocation === 'mugar') {
+	        $('#route-image').attr('src', './assets/img/ha/ha_mu.png');
+	    } else if (startLocation === 'hayden' && endLocation === 'richards') {
+	        $('#route-image').attr('src', './assets/img/ha/ha_ri.png');
+	    } else if (startLocation === 'hayden' && endLocation === 'snell-lib') {
+	        $('#route-image').attr('src', './assets/img/ha/ha_sl.png');
+	    } else if (startLocation === 'hayden' && endLocation === 'snell') {
+	        $('#route-image').attr('src', './assets/img/ha/ha_sn.png');
+	    } else if (startLocation === 'richards' && endLocation === 'cabot') {
+	        $('#route-image').attr('src', './assets/img/ri/ri_cb.png');
+	    } else if (startLocation === 'richards' && endLocation === 'churchill') {
+	        $('#route-image').attr('src', './assets/img/ri/ri_ch.png');
+	    } else if (startLocation === 'richards' && endLocation === 'curry') {
+	        $('#route-image').attr('src', './assets/img/ri/ri_csc.png');
+	    } else if (startLocation === 'richards' && endLocation === 'dodge') {
+	        $('#route-image').attr('src', './assets/img/ri/ri_dg.png');
+	    } else if (startLocation === 'richards' && endLocation === 'ell') {
+	        $('#route-image').attr('src', './assets/img/ri/ri_el.png');
+	    } else if (startLocation === 'richards' && endLocation === 'forsyth') {
+	        $('#route-image').attr('src', './assets/img/ri/ri_fr.png');
+	    } else if (startLocation === 'richards' && endLocation === 'hayden') {
+	        $('#route-image').attr('src', './assets/img/ri/ri_ha.png');
+	    } else if (startLocation === 'richards' && endLocation === 'mugar') {
+	        $('#route-image').attr('src', './assets/img/ri/ri_mu.png');
+	    } else if (startLocation === 'richards' && endLocation === 'snell-lib') {
+	        $('#route-image').attr('src', './assets/img/ri/ri_sl.png');
+	    } else if (startLocation === 'richards' && endLocation === 'snell') {
+	        $('#route-image').attr('src', './assets/img/ri/ri_sn.png');
+	    } else if (startLocation === 'snell-lib' && endLocation === 'cabot') {
+	        $('#route-image').attr('src', './assets/img/sl/sl_cb.png');
+	    } else if (startLocation === 'snell-lib' && endLocation === 'churchill') {
+	        $('#route-image').attr('src', './assets/img/sl/sl_ch.png');
+	    } else if (startLocation === 'snell-lib' && endLocation === 'curry') {
+	        $('#route-image').attr('src', './assets/img/sl/sl_csc.png');
+	    } else if (startLocation === 'snell-lib' && endLocation === 'dodge') {
+	        $('#route-image').attr('src', './assets/img/sl/sl_dg.png');
+	    } else if (startLocation === 'snell-lib' && endLocation === 'ell') {
+	        $('#route-image').attr('src', './assets/img/sl/sl_el.png');
+	    } else if (startLocation === 'snell-lib' && endLocation === 'forsyth') {
+	        $('#route-image').attr('src', './assets/img/sl/sl_fr.png');
+	    } else if (startLocation === 'snell-lib' && endLocation === 'mugar') {
+	        $('#route-image').attr('src', './assets/img/sl/sl_mu.png');
+	    } else if (startLocation === 'snell-lib' && endLocation === 'hayden') {
+	        $('#route-image').attr('src', './assets/img/sl/sl_ha.png');
+	    } else if (startLocation === 'snell-lib' && endLocation === 'richards') {
+	        $('#route-image').attr('src', './assets/img/sl/sl_ri.png');
+	    } else if (startLocation === 'snell-lib' && endLocation === 'snell') {
+	        $('#route-image').attr('src', './assets/img/sl/sl_sn.png');
 	    }
 	};
 
