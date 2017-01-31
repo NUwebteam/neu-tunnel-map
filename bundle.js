@@ -292,31 +292,6 @@
 	    }
 	});
 
-	// $('#close-direction').on('click', function() {
-	//     $('.direction-container').removeClass('slide-container');
-	//     setTimeout(function() {
-	//         $('.direction-container').addClass('hide');
-	//     }, 250);
-	//     // $('.direction-container').delay(500).removeClass('hide');
-	// });
-
-	// $('#map-go').on('click', function() {
-	//     let start = $('select[name="start-location"]').val();
-	//     let end = $('select[name="end-location"]').val();
-	//     getMapRoute(start,end);
-	//     if (start === end || start === '' && end === '' || end === '' || start === '') {
-	//         $('.error-container').removeClass('hide');
-	//     } else {
-	//         $('.error-container').addClass('hide');
-	//         $('.direction-container').removeClass('slide-container');
-	//         $('.route-container').addClass('show-route');
-	//         $('#close-route').addClass('show-route');
-	//         setTimeout(function() {
-	//             $('.direction-container').addClass('hide');
-	//         }, 250);
-	//     }
-	// });
-
 	$('#close-route').on('click', function () {
 	    $('.route-container').removeClass('show-route');
 	    $('#close-route').removeClass('show-route');

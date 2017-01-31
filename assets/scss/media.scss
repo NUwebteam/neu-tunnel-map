@@ -3,10 +3,7 @@
     font-size: 12px;
   }
   .map-container {
-    // transform: scale(1);
     transition: all .5s ease;
-    // width:  auto;
-    // height: 100vh;
     overflow: scroll;
   }
 
@@ -48,7 +45,6 @@
   .route-container {
     transform: scale(1);
     height: 100vh;
-    // overflow: scroll;
     transition: all .5s ease;
   }
 
@@ -58,12 +54,10 @@
     width:  auto;
     min-height: 100vw;
     height: 100vh;
-    // overflow: scroll;
     transition: all .5s ease;
   }
 
   .direction-form-wrapper {
-    // margin: 100px 0% 0% 12.5%;
     max-width: 100%;
     width: 100%;
     text-align: left;
